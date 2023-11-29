@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap");
+body {
+  background-color: #f3e7d8;
+}
+
+h1 {
+  font-family: "bhutuka expanded one";
+}
+
+a {
+  font-family: "bhutuka expanded one";
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: blue;
+}
+
+.showMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=main.css.map */

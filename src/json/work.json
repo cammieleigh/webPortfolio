@@ -1,0 +1,16 @@
+{
+    "projects": [
+        {
+            "id" : 1,
+            "name": "Chamber of Commcerce",
+            "url" : "https://cammieleigh.github.io/wdd230/chamber/",
+            "github": "https://github.com/cammieleigh/wdd230/tree/main/chamber"
+        },
+        {
+            "id": 2,
+            "name": "PHP Car Site",
+            "url" : "",
+            "github": ""
+        }
+    ]
+}
