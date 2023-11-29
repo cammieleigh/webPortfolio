@@ -1,21 +1,15 @@
 import { createElement } from './utils.mjs';
-import jsonUrl from 'url:../json/work.json';
+import workJson from '../json/work.json';
 
 
 function Page2() {
 
     const workInfo = createElement('div', {className: 'listCards'});
 
-    fetch(jsonUrl)
-      .then(function (response) {
-        return response.json();
-       })
-      .then(function (jsonObject) {
-        console.table(jsonObject);  // temporary checking for valid response and data parsing
-        const work = jsonObject['work'];
+        console.table(workJson);  // temporary checking for valid response and data parsing
+        const work = workJson['work'];
         work.forEach(displayGrid);
-      });
-
+    
       function displayGrid(item){
         let card = document.createElement('div');
         card.setAttribute('class', 'workDiv');
