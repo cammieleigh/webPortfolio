@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');
-$base-font: "bhutuka expanded one";
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Poiret+One&display=swap');
+
+$base-font: "poiret one";
 body{
-    background-color: #f3e7d8;
+    background-color: #F7EBF8;
 }
 
 h1{
     font-family: $base-font;
+    
 }
 
 a {
@@ -13,15 +15,131 @@ a {
     text-decoration: none;
     color: black;
     &:hover{
-        color: blue;
+        color: black;
     }
 }
 
 .navBar__items{
-    // display: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    font-size: 1.5em;
 }
 
-.showMenu{
-    display: flex;
-    flex-direction: column;
+.aboutMeDes{
+    font-family: $base-font;
+    font-size: 2em;
+    text-align: center;
 }
+
+.heading{
+    display: inline;
+    font-size: 20vw;
+    color: #ed583f;
+    position: relative;
+    margin-left: 30px;
+    
+    &__title{
+        background-color: #f3a732;
+    }
+    
+}
+
+#page1img{
+    display: block;
+    width: 80vw;
+ border-radius: 150px;
+ margin: auto;
+ box-shadow: 0 0 10px 10px #A2C75D;
+ margin-top: -85px;
+}
+
+.workDiv{
+    background-color: #A2C75D;
+    border-radius: 100px;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: $base-font;
+}
+
+//medium view
+@media only screen and (min-width: 545px) {
+    #page1main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 80vh;
+    }
+    #page1img{
+        height: 60vh;
+        width: auto;
+        grid-row: 1/3;
+        margin-top: 0px;
+        align-self: start;
+        grid-column: 2/4;
+        margin-right: 30px;
+        margin-top: 20px;
+        
+    }
+
+    .heading{
+        font-size: 10vw;
+        grid-row: 2/3;
+        grid-column: 1/3;
+        width: 65vw;
+        text-align: center;
+        display: inline;
+    }
+
+    .aboutMeDes{
+        grid-row: 1/2;
+        grid-column: 1/3;
+        align-self: center;
+        font-size: 3.5em;
+        &__content{
+            background-color: #A2C75D;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1021px){
+
+    #page1img{
+        width: 24vw;
+        height: auto;
+        margin-right: 100px;
+        position: relative;
+    }
+
+    .aboutMeDes{
+        grid-column: 1/4;
+        margin-left: 150px;
+        margin-bottom: -75px;
+        color:#2A0760;
+        background-color: #A2C75D;
+        text-align: right;
+        padding-right: 450px;
+        box-shadow: -5px 5px 8px #5D7137;
+        &__content{
+           background-color: transparent;
+            padding: 10px;
+            
+        }
+    }
+
+    .heading{
+        width: 75vw;
+        text-align: left;
+        
+        &__title{
+            padding-left: 100px;
+            margin-left: -50px;
+            box-shadow: 5px 5px 8px #AE7520;
+            // border-radius: 100px;
+        }
+    }
+
+}
+

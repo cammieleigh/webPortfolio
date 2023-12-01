@@ -6,9 +6,9 @@ function Header(mainDiv) {
   
 
   // nav items
-  const hamburger = createElement('button', 
-  {textContent: 'Menu',
-   id: 'btn'});
+  // const hamburger = createElement('button', 
+  // {textContent: 'Menu',
+  //  id: 'btn'});
   const page1 = createElement('a', {
     href: '/#/page1',
     textContent: 'Home',
@@ -22,17 +22,17 @@ function Header(mainDiv) {
     textContent: 'About Me',
   });
   const navDiv = createElement ('div', {className: 'navBar__items'}, [page1, page2, page3]);
-  const nav = createElement('nav', {className: 'navBar'}, [hamburger, navDiv]);
+  const nav = createElement('nav', {className: 'navBar'}, [navDiv]);
 
   return createElement('header', {}, [nav]);
 }
 
 function Footer() {
-  const copyright = createElement('span', {
-    textContent: `Copyright © ${new Date().getFullYear()}`,
-  });
+  // const copyright = createElement('span', {
+  //   textContent: `Copyright © ${new Date().getFullYear()}`,
+  // });
 
-  return createElement('footer', {}, [copyright]);
+  // return createElement('footer', {}, [copyright]);
 }
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
 
   initRouter(main);
 
-  return createElement('div', {}, [Header(main), main, Footer()]);
+  return createElement('div', {}, [Header(main), main]);
 }
 
 export default App;

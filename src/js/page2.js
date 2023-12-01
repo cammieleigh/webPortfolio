@@ -4,10 +4,12 @@ import workJson from '../json/work.json';
 
 function Page2() {
 
+    const page2Title = createElement('h1', {className: 'workTitle', textContent:'My Projects!'})
     const workInfo = createElement('div', {className: 'listCards'});
 
-        console.table(workJson);  // temporary checking for valid response and data parsing
-        const work = workJson['work'];
+        console.log(workJson);  // temporary checking for valid response and data parsing
+        const work = workJson['projects'];
+        console.log(work);
         work.forEach(displayGrid);
     
       function displayGrid(item){
@@ -17,18 +19,22 @@ function Page2() {
         name.setAttribute('class', 'workDiv__name');
         name.textContent = item.name;
         card.appendChild(name);
-        let url = document.createElement('h2');
+        let url = document.createElement('a');
         url.setAttribute('class', 'workDiv__url');
-        url.textContent = item.url;
+        url.setAttribute('href', item.url);
+        url.textContent = 'Check out the site!';
         card.appendChild(url);
-        let github = document.createElement('h2');
+        let enter = document.createElement('br');
+        card.appendChild(enter);
+        let github = document.createElement('a');
         github.setAttribute('class', 'workDiv__github');
-        github.textContent = item.github;
+        github.setAttribute('href', item.github);
+        github.textContent = 'Take a peek at the code';
         card.appendChild(github);
-        document.querySelector('div.listCards').appendChild(card);
+        workInfo.appendChild(card);
       }
 
-  return createElement('div', {}, [workInfo]);
+  return createElement('div', {}, [page2Title, workInfo]);
 }
 
 export default Page2;

@@ -1,20 +1,18 @@
 import { createElement } from './utils.mjs';
+import profilePic from '../images/profilePic.jpg'
 
 function Page1() {
-  
+  const nameSpan = createElement('span', {textContent: 'Cammie Lee', className: 'heading__title'})
   const appTitle = createElement('h1', {
-    textContent: 'Cammie Lee',
     className: 'heading',
-  });
-  // const page3Link = createElement('a', {
-  //   href: '/#/page3',
-  //   textContent: 'Link to Page 3',
-  // });
-const aboutMe = createElement('p', {
-  textContent: 'something cool',
-  id: 'aboutMeDes'
-})
-  return createElement('div', {}, [aboutMe, appTitle]);
+  }, [nameSpan]);
+
+  const img = createElement('img', {id:'page1img',  src: profilePic, alt:'image of me'})
+  const desSpan = createElement('span', {textContent: 'Putting aesthetic into software engineering', className: 'aboutMeDes__content'})
+const aboutMe = createElement('p', {className: 'aboutMeDes'
+}, [desSpan]);
+
+  return createElement('div', {id:'page1main'}, [appTitle, img, aboutMe ]);
 }
 
 export default Page1;
