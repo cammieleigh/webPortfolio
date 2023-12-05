@@ -34,7 +34,7 @@ function Page2() {
         workInfo.appendChild(card);
       }
 
-  return createElement('div', {}, [page2Title, workInfo]);
+  return createElement('div', {className: "page2div"}, [workInfo, page2Title ]);
 }
 
 export default Page2;

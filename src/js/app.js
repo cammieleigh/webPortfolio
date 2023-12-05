@@ -4,11 +4,9 @@ import { initRouter } from './router';
 
 function Header(mainDiv) {
   
-
-  // nav items
-  // const hamburger = createElement('button', 
-  // {textContent: 'Menu',
-  //  id: 'btn'});
+  const hamburger = createElement('button', 
+  {textContent: 'Menu',
+   id: 'btn'});
   const page1 = createElement('a', {
     href: '/#/page1',
     textContent: 'Home',
@@ -21,10 +19,20 @@ function Header(mainDiv) {
     href: '/#/page3',
     textContent: 'About Me',
   });
+
+ 
+
+
+
   const navDiv = createElement ('div', {className: 'navBar__items'}, [page1, page2, page3]);
   const nav = createElement('nav', {className: 'navBar'}, [navDiv]);
 
-  return createElement('header', {}, [nav]);
+  function show() {
+    navDiv.classList.toggle('showMenu');
+}
+hamburger.addEventListener('click', show);
+
+  return createElement('header', {}, [hamburger, nav]);
 }
 
 function Footer() {

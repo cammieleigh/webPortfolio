@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Poiret+One&display=swap');
 
 $base-font: "poiret one";
+$green-accent:"#A2C75D";
+$orange-accent:"#f3a732";
+#root{
+    margin: 0;
+}
 body{
     background-color: #F7EBF8;
+    padding: 0;
+    margin: 0;
 }
 
 h1{
@@ -20,6 +27,10 @@ a {
 }
 
 .navBar__items{
+    display: none;
+}
+
+.showMenu{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 20px;
@@ -56,15 +67,49 @@ a {
 
 .workDiv{
     background-color: #A2C75D;
-    border-radius: 100px;
+    border-radius: 0px 100px 100px 0px;
+        width: 85vw;
+        margin-left: 0;
     padding: 20px;
     margin-bottom: 10px;
     text-align: center;
     font-family: $base-font;
+    font-size: 4vw;
+    
+}
+
+.workTitle{
+    text-align: center;
+}
+
+.aboutMe{
+    font-family: $base-font;
+    color: #ed583f;
+    font-size: 2em;
+    width: 75vw;
+    margin: auto;
+    &__welcome{
+        font-family: $base-font;
+        color: #ed583f;
+        font-size: 4em;
+        margin-left: 50px;
+
+    }
 }
 
 //medium view
 @media only screen and (min-width: 545px) {
+    .navBar__items{
+        display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    }
+
+    #btn{
+        display: none;
+    }
+
     #page1main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -100,6 +145,44 @@ a {
         &__content{
             background-color: #A2C75D;
         }
+    }
+
+    .workDiv{
+        width: 50vw;
+        font-size: 1em;
+        &:hover{
+            box-shadow: 0 0 10px 10px #5D7137;
+        }
+    }
+
+    .listCards{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-content: space-evenly;
+        // grid-column: 1/3;
+        // justify-self: start;
+    }
+
+    .page2div{
+        display: flex;
+        // width: 100vw;
+        // grid-template-columns: 1fr 1fr 1fr;
+         margin-top: 100px;
+    }
+
+    .workTitle{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 10vw;
+        grid-column: 2/4;
+        margin: auto;
+        background-color: #f3a732;
+        border-radius: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        color: #F7EBF8;
+        padding-bottom: 10px;
     }
 
 }
