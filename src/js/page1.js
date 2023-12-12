@@ -1,7 +1,9 @@
 import { createElement } from './utils.mjs';
-import profilePic from '../images/profilePic.jpg'
+import profilePic from '../images/profilePic.jpg';
+import headerTitle from './app.js';
 
 function Page1() {
+  
   const nameSpan = createElement('span', {textContent: 'Cammie Lee', className: 'heading__title'})
   const appTitle = createElement('h1', {
     className: 'heading',

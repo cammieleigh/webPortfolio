@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=League+Script&family=Poiret+One&display=swap');
 
 $base-font: "poiret one";
 $green-accent:"#A2C75D";
@@ -25,18 +25,61 @@ a {
         color: black;
     }
 }
+header{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin-bottom: 20px;
+}
 
 .navBar__items{
     display: none;
+    width: 100vw;
 }
-
+.navBar{
+    width: 100vw;
+}
 .showMenu{
     display: flex;
+    flex-direction: column;
+    
     justify-content: space-evenly;
     margin-bottom: 20px;
     font-size: 1.5em;
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+  background: #fff;
+  color: #000;
+  opacity: 0.95;
+  height: 75vw;
 }
 
+
+
+.btn{
+    background: none;
+    border: none;
+    width: 10vw;
+    margin-top: 25px;
+    margin-left: 20px;
+    display: inline-block;
+    position: absolute;
+    z-index: 6;
+    
+}
+
+
+
+.menuImg{
+    width: 75%;
+    height: auto;
+}
+
+.headerTitle{
+    display: inline;
+    letter-spacing: .5em;
+    width: 100vw;
+}
 .aboutMeDes{
     font-family: $base-font;
     font-size: 2em;
@@ -99,6 +142,10 @@ a {
 
 //medium view
 @media only screen and (min-width: 545px) {
+    .headerTitle{
+        display: none;
+    }
+    
     .navBar__items{
         display: flex;
     justify-content: space-evenly;
@@ -106,9 +153,13 @@ a {
     font-size: 1.5em;
     }
 
-    #btn{
+    .btn{
         display: none;
     }
+    .menuImg{
+    width: 75%;
+    height: auto;
+}
 
     #page1main{
         display: grid;

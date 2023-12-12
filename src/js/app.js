@@ -1,12 +1,14 @@
 import { createElement } from './utils.mjs';
 import { initRouter } from './router';
+import menuBtn from '../images/menu-icon.webp';
 
 
 function Header(mainDiv) {
-  
+  const menubtn = createElement('img', {src: menuBtn, className:'menuImg'} )
   const hamburger = createElement('button', 
-  {textContent: 'Menu',
-   id: 'btn'});
+  {
+   className: 'btn'}, [menubtn]);
+   
   const page1 = createElement('a', {
     href: '/#/page1',
     textContent: 'Home',
@@ -20,7 +22,7 @@ function Header(mainDiv) {
     textContent: 'About Me',
   });
 
- 
+  const headerTitle = createElement('h1', {textContent:'Hello There', className:'headerTitle'});
 
 
 
@@ -29,10 +31,12 @@ function Header(mainDiv) {
 
   function show() {
     navDiv.classList.toggle('showMenu');
+    // hamburger.classList.toggle('none');
+    // menubtn.classList.toggle('none');
 }
 hamburger.addEventListener('click', show);
 
-  return createElement('header', {}, [hamburger, nav]);
+  return createElement('header', {}, [hamburger, nav, headerTitle]);
 }
 
 function Footer() {
