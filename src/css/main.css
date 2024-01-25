@@ -193,9 +193,14 @@ header {
     row-gap: 20px;
     align-content: space-evenly;
   }
-  .page2div {
+  .page2flex {
     display: flex;
     margin-top: 100px;
+  }
+  .clarifier {
+    width: 100vw;
+    font-family: "poiret one";
+    text-align: center;
   }
   .workTitle {
     display: flex;
