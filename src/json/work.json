@@ -11,6 +11,55 @@
             "name": "PHP Car Site",
             "url" : "",
             "github": "https://github.com/cammieleigh/phpsite.git"
+        },
+        {
+            "id": 3,
+            "name": "Account Tracker",
+            "url" : "",
+            "github": "https://github.com/cammieleigh/portfolio/tree/main/accountTracker"
+        },
+        {
+            "id": 4,
+            "name": "Camping Website",
+            "url" : "",
+            "github": "https://github.com/BYUI-WDD330-TEAM-C/WDD330-Project1"
+        },
+        {
+            "id": 5,
+            "name": "Authentication Service",
+            "url" : "",
+            "github": "https://github.com/cammieleigh/cit270authenticationservice"
+        },
+        {
+            "id": 6,
+            "name": "React Font Picker",
+            "url" : "",
+            "github": "https://github.com/cammieleigh/reactProject"
+        },
+        {
+            "id": 7,
+            "name": "Node+MongoDB App",
+            "url" : "",
+            "github": "https://github.com/cammieleigh/webServices"
+        },
+        {
+            "id": 8,
+            "name": "TypeScript Drawing App",
+            "url" : "",
+            "github": "https://github.com/cammieleigh/typescript"
+        },
+        {
+            "id": 9,
+            "name": "Pandas Data Audit",
+            "url" : "",
+            "github": "https://github.com/cammieleigh/pandas"
+        }
+        ,
+        {
+            "id": 10,
+            "name": "Senior Project (Under Construction!)",
+            "url" : "",
+            "github": "https://github.com/cammieleigh/seniorProject"
         }
     ]
 }

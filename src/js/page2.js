@@ -36,7 +36,7 @@ function Page2() {
         workInfo.appendChild(card);
       }
       const page2flex = createElement('div', {className: 'page2flex'}, [workInfo, page2Title]);
-  return createElement('div', {className: "page2div"}, [page2flex, subtitle ]);
+  return createElement('div', {className: "page2div"}, [ subtitle, page2flex ]);
 }
 
 export default Page2;

@@ -10,7 +10,7 @@ function Page1() {
   }, [nameSpan]);
 
   const img = createElement('img', {id:'page1img',  src: profilePic, alt:'image of me'})
-  const desSpan = createElement('span', {textContent: 'Putting aesthetic into software engineering', className: 'aboutMeDes__content'})
+  const desSpan = createElement('span', {textContent: 'Web Developer and Database Engineer', className: 'aboutMeDes__content'})
 const aboutMe = createElement('p', {className: 'aboutMeDes'
 }, [desSpan]);
 

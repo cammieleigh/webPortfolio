@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=League+Script&family=Poiret+One&display=swap");
+html {
+  margin: 0;
+}
+
 #root {
   margin: 0;
 }
@@ -7,6 +11,7 @@ body {
   background-color: #F7EBF8;
   padding: 0;
   margin: 0;
+  max-width: 100vw;
 }
 
 h1 {
@@ -26,6 +31,7 @@ header {
   display: grid;
   grid-template-columns: 25% 75%;
   margin-bottom: 20px;
+  width: 100vw;
 }
 
 .navBar__items {
@@ -71,7 +77,6 @@ header {
 .headerTitle {
   display: inline;
   letter-spacing: 0.5em;
-  width: 100vw;
 }
 
 .aboutMeDes {
@@ -181,7 +186,7 @@ header {
     background-color: #A2C75D;
   }
   .workDiv {
-    width: 50vw;
+    width: 40vw;
     font-size: 1em;
   }
   .workDiv:hover {
@@ -196,6 +201,7 @@ header {
   .page2flex {
     display: flex;
     margin-top: 100px;
+    width: 100vw;
   }
   .clarifier {
     width: 100vw;
@@ -203,17 +209,16 @@ header {
     text-align: center;
   }
   .workTitle {
-    display: flex;
-    flex-wrap: wrap;
     font-size: 10vw;
-    grid-column: 2/4;
-    margin: auto;
     background-color: #f3a732;
+    margin: auto;
     border-radius: 50px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-top: 0px;
     color: #F7EBF8;
-    padding-bottom: 10px;
+    padding: 20px;
+    align-self: flex-start;
+    width: 40vw;
   }
 }
 @media only screen and (min-width: 1021px) {
