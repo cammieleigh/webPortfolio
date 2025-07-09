@@ -43,9 +43,9 @@ function Page2() {
         img3.setAttribute('class', 'workImg');
         //img3.textContent = item.img1;
         full.appendChild(card);
-        full.appendChild(img1);
-        full.appendChild(img2);
-        full.appendChild(img3);
+        //full.appendChild(img1);
+        //full.appendChild(img2);
+        //full.appendChild(img3);
         workInfo.appendChild(full);
       }
       const page2flex = createElement('div', {className: 'page2flex'}, [workInfo, page2Title]);
