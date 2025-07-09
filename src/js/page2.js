@@ -35,17 +35,17 @@ function Page2() {
         card.appendChild(github);
         let img1 = document.createElement("img");
         img1.setAttribute('class', 'workImg');
-        //img1.textContent = item.img1;
+        img1.src = item.img1;
         let img2 = document.createElement("img");
         img2.setAttribute('class', 'workImg');
-        //img2.textContent = item.img1;
+        img2.src = item.img2;
         let img3 = document.createElement("img");
         img3.setAttribute('class', 'workImg');
-        //img3.textContent = item.img1;
+        img3.src = item.img3;
         full.appendChild(card);
-        //full.appendChild(img1);
-        //full.appendChild(img2);
-        //full.appendChild(img3);
+        full.appendChild(img1);
+        full.appendChild(img2);
+        full.appendChild(img3);
         workInfo.appendChild(full);
       }
       const page2flex = createElement('div', {className: 'page2flex'}, [workInfo, page2Title]);
