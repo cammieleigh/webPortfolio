@@ -41,7 +41,7 @@ function Page2() {
         img2.src = item.img2;
         let img3 = document.createElement("img");
         img3.setAttribute('class', 'workImg');
-        img3.src = item.img2;
+        img3.src = item.images[0].img2;
         full.appendChild(card);
         full.appendChild(img1);
         full.appendChild(img2);
@@ -49,7 +49,7 @@ function Page2() {
         workInfo.appendChild(full);
       }
       const page2flex = createElement('div', {className: 'page2flex'}, [workInfo, page2Title]);
-  return createElement('div', {className: "page2div"}, [ subtitle, page2flex ]);
+  return createElement('div', {className: "page2div"}, [ page2flex ]);
 }
 
 export default Page2;
