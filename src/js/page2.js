@@ -13,7 +13,7 @@ function Page2() {
         work.forEach(displayGrid);
     
       function displayGrid(item){
-        let full = document.createElement('div');
+        //let full = document.createElement('div');
         card.setAttribute('class', 'fullDiv');
         let card = document.createElement('div');
         card.setAttribute('class', 'workDiv');
@@ -42,11 +42,11 @@ function Page2() {
         // let img3 = document.createElement("img");
         // img3.setAttribute('class', 'workImg');
         // img3.src = item.img3;
-        full.appendChild(card);
-        full.appendChild(img1);
-        full.appendChild(img2);
-        full.appendChild(img3);
-        workInfo.appendChild(full);
+        // full.appendChild(card);
+        // full.appendChild(img1);
+        // full.appendChild(img2);
+        // full.appendChild(img3);
+        workInfo.appendChild(card);
       }
       const page2flex = createElement('div', {className: 'page2flex'}, [workInfo, page2Title]);
   return createElement('div', {className: "page2div"}, [ subtitle, page2flex ]);
