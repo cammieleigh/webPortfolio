@@ -8,10 +8,8 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "parcel": "^2.10.3"
-  },
-  "proxy": "http://localhost:8080"
+  "proxy": "http://localhost:8080",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
 }
-
-

@@ -4,9 +4,7 @@ import workJson from '../json/work.json';
 
 function Page2() {
 
-    const page2Title = createElement('h1', {className: 'workTitle', textContent:'My Projects!'});
-    const subtitle = createElement('h2', {className: 'clarifier', textContent: 'Video Demos or website URLs are included in the read me file:)'});
-    
+    const page2Title = createElement('h1', {className: 'workTitle', textContent:'My Projects!'});    
     const workInfo = createElement('div', {className: 'listCards'});
 
         console.log(workJson);  // temporary checking for valid response and data parsing
@@ -15,6 +13,8 @@ function Page2() {
         work.forEach(displayGrid);
     
       function displayGrid(item){
+        let full = document.createElement('div');
+        card.setAttribute('class', 'fullDiv');
         let card = document.createElement('div');
         card.setAttribute('class', 'workDiv');
         let name = document.createElement('h2');
@@ -33,7 +33,20 @@ function Page2() {
         github.setAttribute('href', item.github);
         github.textContent = 'Take a peek at the code';
         card.appendChild(github);
-        workInfo.appendChild(card);
+        let img1 = document.createElement("img");
+        img1.setAttribute('class', 'workImg');
+        img1.textContent = item.img1;
+        let img2 = document.createElement("img");
+        img2.setAttribute('class', 'workImg');
+        img2.textContent = item.img1;
+        let img3 = document.createElement("img");
+        img3.setAttribute('class', 'workImg');
+        img3.textContent = item.img1;
+        full.appendChild(card);
+        full.appendChild(img1);
+        full.appendChild(img2);
+        full.appendChild(img3);
+        workInfo.appendChild(full);
       }
       const page2flex = createElement('div', {className: 'page2flex'}, [workInfo, page2Title]);
   return createElement('div', {className: "page2div"}, [ subtitle, page2flex ]);
