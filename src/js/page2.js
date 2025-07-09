@@ -13,8 +13,8 @@ function Page2() {
         work.forEach(displayGrid);
     
       function displayGrid(item){
-        //let full = document.createElement('div');
-        card.setAttribute('class', 'fullDiv');
+        let full = document.createElement('div');
+        full.setAttribute('class', 'fullDiv');
         let card = document.createElement('div');
         card.setAttribute('class', 'workDiv');
         let name = document.createElement('h2');
@@ -33,20 +33,20 @@ function Page2() {
         github.setAttribute('href', item.github);
         github.textContent = 'Take a peek at the code';
         card.appendChild(github);
-        // let img1 = document.createElement("img");
-        // img1.setAttribute('class', 'workImg');
-        // img1.src = item.img1;
-        // let img2 = document.createElement("img");
-        // img2.setAttribute('class', 'workImg');
-        // img2.src = item.img2;
-        // let img3 = document.createElement("img");
-        // img3.setAttribute('class', 'workImg');
-        // img3.src = item.img3;
-        // full.appendChild(card);
-        // full.appendChild(img1);
-        // full.appendChild(img2);
-        // full.appendChild(img3);
-        workInfo.appendChild(card);
+        let img1 = document.createElement("img");
+        img1.setAttribute('class', 'workImg');
+        img1.src = item.img1;
+        let img2 = document.createElement("img");
+        img2.setAttribute('class', 'workImg');
+        img2.src = item.img2;
+        let img3 = document.createElement("img");
+        img3.setAttribute('class', 'workImg');
+        img3.src = item.img2;
+        full.appendChild(card);
+        full.appendChild(img1);
+        full.appendChild(img2);
+        full.appendChild(img3);
+        workInfo.appendChild(full);
       }
       const page2flex = createElement('div', {className: 'page2flex'}, [workInfo, page2Title]);
   return createElement('div', {className: "page2div"}, [ subtitle, page2flex ]);
