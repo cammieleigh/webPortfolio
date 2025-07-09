@@ -35,13 +35,13 @@ function Page2() {
         card.appendChild(github);
         let img1 = document.createElement("img");
         img1.setAttribute('class', 'workImg');
-        img1.textContent = item.img1;
+        //img1.textContent = item.img1;
         let img2 = document.createElement("img");
         img2.setAttribute('class', 'workImg');
-        img2.textContent = item.img1;
+        //img2.textContent = item.img1;
         let img3 = document.createElement("img");
         img3.setAttribute('class', 'workImg');
-        img3.textContent = item.img1;
+        //img3.textContent = item.img1;
         full.appendChild(card);
         full.appendChild(img1);
         full.appendChild(img2);
