@@ -35,14 +35,14 @@ function Page2() {
         card.appendChild(github);
         let img1 = document.createElement("img");
         img1.setAttribute('class', 'workImg');
-        img1.src = item.img1;
+        img1.src = item.path1;
         let img2 = document.createElement("img");
         img2.setAttribute('class', 'workImg');
-        img2.src = item.img2;
+        img2.src = item.path2;
         let img3 = document.createElement("img");
         img3.setAttribute('class', 'workImg');
         console.log(item.images.img3);
-        img3.src = item.images.img3;
+        img3.src = item.images.path3;
         full.appendChild(card);
         full.appendChild(img1);
         full.appendChild(img2);
