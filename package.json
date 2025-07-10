@@ -10,6 +10,6 @@
   "license": "ISC",
   "proxy": "http://localhost:8080",
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "parcel": "^2.15.4"
   }
 }
