@@ -1,5 +1,5 @@
 import { createElement } from './utils.mjs';
-import profilePic from '../images/profilePic.jpg';
+import profilePic from '../webPortfolio/images/profilePic.jpg';
 import headerTitle from './app.js';
 
 function Page1() {
