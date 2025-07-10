@@ -41,7 +41,7 @@ function Page2() {
         //img2.src = item.images.path2;
         let img3 = document.createElement("img");
         img3.setAttribute('class', 'workImg');
-        console.log(item.images.img3);
+        //console.log(item.images.img3);
         //img3.src = item.images.path3;
         full.appendChild(card);
         full.appendChild(img1);
