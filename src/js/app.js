@@ -1,6 +1,6 @@
 import { createElement } from './utils.mjs';
 import { initRouter } from './router';
-import menuBtn from '../webPortfolio/images/menu-icon.webp';
+import menuBtn from '../images/menu-icon.webp';
 
 
 function Header(mainDiv) {

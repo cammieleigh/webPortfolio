@@ -1,5 +1,5 @@
 import { createElement } from './utils.mjs';
-import profilePic from '../webPortfolio/images/profilePic.jpg';
+import profilePic from '../images/profilePic.jpg';
 import headerTitle from './app.js';
 
 function Page1() {
@@ -9,7 +9,7 @@ function Page1() {
     className: 'heading',
   }, [nameSpan]);
 
-  const img = createElement('img', {id:'page1img',  src: profilePic, alt:'image of me'})
+  const img = createElement('img', {id:'page1img',  src: '../images/profilePic.jpg', alt:'image of me'})
   const desSpan = createElement('span', {textContent: 'Web Developer and Database Engineer', className: 'aboutMeDes__content'})
 const aboutMe = createElement('p', {className: 'aboutMeDes'
 }, [desSpan]);
